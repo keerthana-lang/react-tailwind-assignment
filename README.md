@@ -1,12 +1,56 @@
-# React + Vite
+# React Tailwind Assignment 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React project styled with Tailwind CSS that demonstrates the use of multiple components and props. The application includes a simple login screen, responsive navbar, and a list of users passed via props.
 
-Currently, two official plugins are available:
+## 🔧 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React (Vite)
+- 💨 Tailwind CSS
+- 🧠 Props (React data passing concept)
+- 🎨 Responsive UI with Flexbox and Grid
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 Login screen (user enters name)
+- 📱 Responsive Navbar
+- 🙋 Welcome message (shows entered name via props)
+- 📊 Stats card (shows total users via props)
+- 👤 User list (dynamic user data passed via props)
+- 🦶 Clean footer with year and credits
+
+## 🧩 Components Used
+
+| Component        | Purpose                          |
+|------------------|----------------------------------|
+| `Navbar`         | Responsive top navigation bar    |
+| `Login`          | Login input screen (controlled)  |
+| `WelcomeMessage` | Displays greeting (via props)    |
+| `StatsCard`      | Shows user count (via props)     |
+| `UserList`       | Loops through users (via props)  |
+| `UserCard`       | Displays individual user         |
+| `Footer`         | Footer text at bottom            |
+
+## 💡 Props Used
+
+- `WelcomeMessage` receives: `name`
+- `StatsCard` receives: `count`
+- `UserList` receives: `users` array
+- `UserCard` receives: `name`, `age`
+
+## 📁 Folder Structure
+
+my-project/
+├── src/
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── Login.jsx
+│ │ ├── WelcomeMessage.jsx
+│ │ ├── StatsCard.jsx
+│ │ ├── UserList.jsx
+│ │ └── UserCard.jsx
+│ ├── App.jsx
+│ └── main.jsx
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+
